@@ -21,7 +21,6 @@ spec:
           - name: JAVA_OPTS
             value: "-Xmx1400m"
           image: "<%= link('private-image-repository-link').instances[0].address %>:<%= link('private-image-repository-link').p('image_repository.port') %>/paasta_jenkins:latest"
-#          image: "paastateam/paasta_jenkins:lastest"
           name: master
           ports:
             - containerPort: 8080
